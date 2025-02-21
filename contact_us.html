@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="app\static\css\aboutus.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="app\static\images\logo.png" alt="News Wire Logo">
+            <div>
+                <h1>NEWS WIRE</h1>
+                <p>BEYOND HEADLINES</p>
+            </div>
+        </div>
+    
+        <nav class="navbar">
+            <a href="Homepage.html">Home</a>
+            <a href="app\user\login.html">Login</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-image">
+            <img src="images/4.jpg" alt="Contact Us Image">
+        </section>
+        
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have a news tip, feedback, or business inquiries, feel free to reach out.</p>
+            <ul>
+                <li><strong>Address:</strong> 123 News St,Colombo 5</li>
+                <li><strong>Email:</strong> contact@newswire.com</li>
+                <li><strong>Phone:</strong> 011-2233445</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Info Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><strong>Address:</strong> 123 News St,Colombo 5</li>
+                    <li><strong>Email:</strong> support@newswire.com</li>
+                    <li><strong>Phone:</strong> 011-2233445</li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/categories">News Categories</a></li>
+                    <li><a href="/latest">Latest News</a></li>
+                    <li><a href="/trending">Trending</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links Section -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/NewsWire" target="_blank">Facebook</a></li><br><br>
+                    <li><a href="https://www.instagram.com/NewsWire" target="_blank">Instagram</a></li><br><br>
+                    <li><a href="https://twitter.com/NewsWire" target="_blank">Twitter</a></li><br><br>
+                    <li><a href="https://www.linkedin.com/company/NewsWire" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-section">
+                <h3>NewsWire</h3>
+                <p>Stay updated with the latest news and updates!</p>
+                <form action="support@newswire.com" method="post" onsubmit="return validateNewsletter()">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 NewsWire. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
